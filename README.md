@@ -16,7 +16,7 @@
 
 
 <div align="center">
-  <sub>The NLW #5 project. Built with ❤︎ by
+  <sub>The NLW #5 project. Built by
     <a href="https://github.com/gregisb">Guilherme Regis</a>
   </sub>
 </div>
@@ -49,7 +49,7 @@ This project was made using the follow technologies:
 # :construction_worker: How to run
 ```bash
 # Clone Repository
-$ git clone https://github.com/jm4rcos/podcastr.git
+$ git clone https://github.com/gregisb/podcastrNLW.git
 ```
 
 ### 💻 Run Web Project
