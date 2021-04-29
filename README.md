@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./.github/logo.svg" alt="Podcastr" width="300"/>
+   <img src="./.public/logo.svg" alt="Podcastr" width="300"/>
 </p>
 
 <p align="center">	
@@ -17,7 +17,7 @@
 
 <div align="center">
   <sub>The NLW #5 project. Built with ❤︎ by
-    <a href="https://github.com/jm4rcos">João Marcos</a>
+    <a href="https://github.com/gregisb">Guilherme Regis</a>
   </sub>
 </div>
 
