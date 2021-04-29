@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">	
-   <a href="https://www.linkedin.com/in/">LinkedIn - Guilherme Regis
+   <a href="www.linkedin.com/in/guilherme-regis">LinkedIn - Guilherme Regis
       
    </a>
 
