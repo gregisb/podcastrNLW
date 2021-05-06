@@ -1,3 +1,6 @@
+
+
+
 <p align="center">
    <img src="./public/logo.svg" alt="Podcastr" width="300"/>
 </p>
@@ -12,6 +15,11 @@
 
 
 </p>
+
+![1](https://user-images.githubusercontent.com/82188855/117225810-998be700-ade9-11eb-9125-7c48cdc9213c.png)
+![2](https://user-images.githubusercontent.com/82188855/117225821-a0b2f500-ade9-11eb-9d1a-6c08331c9cc9.png)
+![3](https://user-images.githubusercontent.com/82188855/117225830-a7416c80-ade9-11eb-9148-9e71545e3d5e.png)
+
 
 
 
