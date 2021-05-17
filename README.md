@@ -1,6 +1,3 @@
-
-
-
 <p align="center">
    <img src="./public/logo.svg" alt="Podcastr" width="300"/>
 </p>
