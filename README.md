@@ -49,7 +49,7 @@ This project was made using the follow technologies:
 
 # :rocket: Features
 
-* Listen to podcasts.
+* Podcast player.
 
 # :construction_worker: How to run
 ```bash
