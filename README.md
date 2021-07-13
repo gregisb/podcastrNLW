@@ -73,7 +73,7 @@ Go to http://localhost:3000/ to see the result.
 Check out the [contributing](./CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
 
-Made by [Guilherme Regis](https://github.com/gregisb) 🚀.
+Made with 💓: by [Guilherme Regis](https://github.com/gregisb) 🚀.
 
 
 
