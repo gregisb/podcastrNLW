@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { usePlayer } from '../../contexts/PlayerContext'
 import styles from './styles.module.scss'
 import Slider from 'rc-slider'
+import Episodes from '../../../server.json'
 
 import 'rc-slider/assets/index.css'
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString'

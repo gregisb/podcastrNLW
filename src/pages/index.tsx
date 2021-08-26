@@ -6,10 +6,13 @@ import Image from 'next/image'
 import Head from 'next/head'
 import { format, parseISO } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
-import { api } from '../services/api'
+// import { api } from '../services/api'
+import serverEpisodes from '../../server.json'
+
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString'
 
 import { usePlayer } from '../contexts/PlayerContext'
+const episodesFromServer = serverEpisodes.episodes
 
 type Episode = {
   id: string;
@@ -127,13 +130,15 @@ export default function Home ({ latestEpisodes, allEpisodes }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api.get('episodes', {
-    params: {
-      _limit: 12,
-      _sort: 'published_at',
-      _order: 'desc'
-    }
-  })
+  // const { data } = await api.get('episodes', {
+  //   params: {
+  //     _limit: 12,
+  //     _sort: 'published_at',
+  //     _order: 'desc'
+  //   }
+  // })
+
+  const data = episodesFromServer
 
   const episodes = data.map(episode => {
     return {

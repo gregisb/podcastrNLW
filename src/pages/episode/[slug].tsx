@@ -3,13 +3,16 @@ import { format, parseISO } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
-import { api } from '../../services/api'
+// import { api } from '../../services/api'
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString'
 import styles from './episode.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import { PlayerContext, usePlayer } from '../../contexts/PlayerContext'
-import Head from 'next/head'
+import Head from 'next/head';
+import serverEpisodes from '../../../server.json'
+
+const episodesFromServer = serverEpisodes.episodes
 
 type EpisodeType = {
   id: string;
@@ -65,13 +68,14 @@ export default function Episode({ episode }: EpisodeProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const { data } = await api.get('episodes', {
-    params: {
-      _limit: 2,
-      _sort: 'published_at',
-      _order: 'desc'
-    }
-  })
+  // const { data } = await api.get('episodes', {
+  //   params: {
+  //     _limit: 2,
+  //     _sort: 'published_at',
+  //     _order: 'desc'
+  //   }
+  // })
+  const data = episodesFromServer
   const paths = data.map(episode => {
     return {
       params: {
@@ -87,7 +91,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params
-  const { data } = await api.get(`/episodes/${slug}`)
+  // const { data } = await api.get(`/episodes/${slug}`)
+
+  const data = episodesFromServer.find((currentEpisode) => {
+    return currentEpisode.id === slug
+  })
 
   const episode = {
     id: data.id,
