@@ -2,10 +2,14 @@
   "name": "podcastrnext",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start:front": "next start",
+    "start": "npm run server",
     "server": "json-server server.json -w -d 750 -p 3333",
     "lint": "eslint ./src/**/*.{ts,tsx}",
     "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}"
