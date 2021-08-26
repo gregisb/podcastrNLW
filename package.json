@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build:front": "next build",
+    "build": "npm install -g json-server",
     "start:front": "next start",
     "start": "npm run server",
     "server": "json-server server.json -w -d 750 -p 3333",
