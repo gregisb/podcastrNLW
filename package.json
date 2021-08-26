@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build:front": "next build",
     "start:front": "next start",
     "start": "npm run server",
     "server": "json-server server.json -w -d 750 -p 3333",
