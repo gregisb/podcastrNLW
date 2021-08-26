@@ -11,7 +11,7 @@
     "build": "npm install -g json-server",
     "start:front": "next start",
     "start": "npm run server",
-    "server": "json-server server.json -w -d 750 -p 3333",
+    "server": "json-server server.json -w -d 750 -p 80",
     "lint": "eslint ./src/**/*.{ts,tsx}",
     "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}",
     "json-server": "^0.16.3"
