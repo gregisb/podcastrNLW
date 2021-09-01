@@ -21,3 +21,40 @@
   }
 }
 
+// mobile
+
+@media(max-width: 1400px) {
+  .header {
+      padding: 2rem;
+
+      p {
+          margin-left: 1rem;
+          padding-left: 1rem;
+      }
+  }
+}
+
+@media(max-width: 1200px) {
+  .headerContainer {
+      padding: 2rem 1.5rem;
+
+      .date {
+          display: none;
+      }
+
+      button {
+          margin-right: 0;
+          padding: .5rem;
+      }
+  }
+}
+
+@media(max-width: 500px) {
+  .headerContainer {
+      justify-content: space-between;
+
+      p {
+          display: none;
+      }
+  }
+}

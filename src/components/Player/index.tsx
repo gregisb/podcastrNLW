@@ -8,7 +8,7 @@ import Episodes from '../../../server.json'
 import 'rc-slider/assets/index.css'
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString'
 
-export function Player(){
+export function Player() {
     const audioRef = useRef<HTMLAudioElement>(null)
     const [progress, setProgress] = useState(0)
 
