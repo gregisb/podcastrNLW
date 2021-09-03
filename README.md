@@ -37,7 +37,7 @@
 # :eyes: Demo Website
 
 =======
-👉  demo: Soon
+👉  demo: https://gr-podcastr.vercel.app/
 
 # :computer: Technologies
 This project was made using the follow technologies:
